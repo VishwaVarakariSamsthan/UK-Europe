@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Yaatra Pandari – UK & Europe</title>
+<title>Yaatra Pandari- UK & Europe</title>
 
 <style>
+
+/* Background with faded mandala */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
-    background: #faf7f2;
+    background:
+        url("mandala bg.jpg");
+    background-size: 1800px;
+    background-repeat: repeat;
+    color: #333;
 }
 
-/* Header Layout */
+/* Header */
 header {
-    background: #7a4b00;
-    color: white;
-    padding: 15px 20px;
+    background: #6b3e00;   /* brown background */
+    padding: 15px 30px;
+    border-bottom: 2px solid #5a3200;
 }
 
 .header-container {
@@ -24,12 +30,16 @@ header {
     justify-content: space-between;
 }
 
-/* Left Image */
-.header-left img {
+/* Header Images */
+.header-left img,
+.header-right img {
     height: 70px;
+    background: white;
+    padding: 4px;
+    border-radius: 6px;
 }
 
-/* Center Text */
+/* Header Text */
 .header-center {
     text-align: center;
     flex-grow: 1;
@@ -37,45 +47,58 @@ header {
 
 .header-center h1 {
     margin: 0;
-    font-size: 34px;   /* increased size */
-    color: #FFFFFF;   
-    font-weight: bold;
+    font-size: 36px;
+    color: white;   /* white text */
+    letter-spacing: 1px;
 }
 
 .header-center p {
-    margin: 5px 0 0 0;
-    font-size: 18px;   /* increased size */
-    color: #FFFFFF;    
+    margin: 6px 0 0 0;
+    font-size: 18px;
+    color: white;   /* white text */
 }
 
-/* Right Logo */
-.header-right img {
-    height: 70px;
-}
-
+/* Layout */
 .container {
-    width: 90%;
+    width: 85%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
+/* Cards */
 .card {
     background: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 25px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* Profile Section */
 .profile {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
 }
 
 .profile img {
-    width: 180px;
+    width: 200px;
     border-radius: 10px;
+}
+
+.profile h2 {
+    color: #6b3e00;
+    margin-top: 0;
+}
+
+.card h2, .card h3 {
+    margin-top: 0;
+    color: #6b3e00;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 .event-card {
@@ -92,60 +115,139 @@ header {
     line-height: 1.5;
 }
 
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #eee;
-    margin-top: 30px;
+    padding: 20px;
+    background: #efe6d8;
+    color: #6b3e00;
+    font-size: 16px;
+    margin-top: 40px;
 }
+
+.side-banner {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    background: #6b3e00;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.org-section {
+    text-align: center;
+}
+
+.org-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.org-item {
+    text-align: center;
+}
+
+.org-item img {
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="side-banner">
+Do not miss! <br>
+Free Event! <br>
+All are welcome!
+</div>
+
 <header>
 <div class="header-container">
 
-    <!-- Left Image -->
-    <div class="header-left">
-        <img src="tukaram.jpg.png" alt="Vitthal Image">
-    </div>
+<div class="header-left">
+<img src="tukaram.jpg.png" alt="Sadguru Image">
+</div>
 
-    <!-- Center Title -->
-    <div class="header-center">
-        <h1>Yaatra Pandari- Europe & UK 2026</h1>
-        <p>Bhavarth Abhang Kirtan</p>
-    </div>
+<div class="header-center">
+<h1>Yaatra Pandari- UK & Europe</h1>
+<p>Bhavarth Abhang Kirtan (English, Tamil, Marati)</p>
+</div>
 
-    <!-- Right Logo -->
-    <div class="header-right">
-        <img src="logo.jpg.png" alt="Organization Logo">
-    </div>
+<div class="header-right">
+<img src="logo.jpg.png" alt="Organization Logo">
+</div>
 
 </div>
 </header>
 
-
 <div class="container">
 
+<!-- Maharaj Profile -->
 <div class="card profile">
-    <img src="raghunathdas.jpg.jpg" alt="Dr. Shri Raghunathdas Maharaj">
+<img src="raghunathdas.jpg.jpg" alt="Shri Raghunathdas Maharaj">
 
-    <div>
-        <h2>Dr. Shri Raghunathdas Maharaj</h2>
-        <p>
-        Dr. Shri Raghunathdas Maharaj, son and disciple of Shri Tukaram Ganapathi Maharaj, 
-        is a renowned Hari Kirtan exponent. He was the first person to teach 
-        Dnyaneshwari in Tamil for devotees across the world.
-        </p>
-        <p>
-        He has received the Youth Icon Award from Maharashtra for his service 
-        towards the Varakari Sampradaya. He holds a PhD in 
-        <i>"Dnyanottarabhakti in Girvana Dnyaneshwari"</i> and has been honored 
-        with the Best Chancellor's Award and the Best Thesis Award for his 
-        exceptional research work.
-        </p>
-    </div>
+<div>
+<h2>Dr. Shri Raghunathdas Maharaj</h2>
+
+<p>
+Dr. Shri Raghunathdas Maharaj, son and disciple of Shri Tukaram Ganapathi Maharaj,
+is a renowned Hari Kirtan exponent. He was the first person to teach
+Dnyaneshwari in Tamil for devotees across the world.
+</p>
+
+<p>
+He has received the Youth Icon Award from Maharashtra for his service
+towards the Varakari Sampradaya. He holds a PhD in
+<i><b>"Dnyanottarabhakti in Girvana Dnyaneshwari"</i></b> and has been honored
+with the Best Chancellor's Award and the Best Thesis Award for his
+exceptional research work.
+</p>
+</div>
+</div>
+
+<!-- Invitation Section -->
+<div class="card">
+
+<h2>Yaatra Pandari – UK & Europe 2026</h2>
+
+<p>
+We are blessed to invite everyone for <b>“Yaatra Pandari UK & Europe 2026”</b>,
+a series of <b>Hari Kirtans and Pravachans</b> across the UK and Europe.
+</p>
+
+<p>
+During Hari Kirtan, selected <b>Abhangs</b> are sung and their meanings are
+explained in <b>English, Marathi, and Tamil</b> for the benefit of devotees.
+</p>
+
+<hr>
+
+<h3>Contact & Donations</h3>
+
+<p>
+For donations towards Samsthan’s Dharmic activities and for
+UK & Europe event information and schedule updates please contact:
+</p>
+
+<p>
+<b>Swetha</b><br>
+WhatsApp/Mobile: +44 7899 086630<br>
+Email: UKdnyaneshwari@gmail.com
+</p>
+
 </div>
 
 <div class="container">
@@ -329,19 +431,84 @@ Location: The Hilt, Hiltingbury Rd, Chandler's Ford, Eastleigh SO53 5NP<br>
 </div>
 </div>
 
+<div class="container">
+<div class="card org-section">
+
+<h2>Supporting Organizations</h2>
+
+<div class="org-logos">
+
+<div class="org-item">
+<img src="Bhakti marga.svg" alt="Organization 1">
+</div>
+
+<div class="org-item">
+<img src="Copy of Colchester_.jpg" alt="Organization 2">
+</div>
+
+<div class="org-item">
+<img src="Copy of DREAMSAI Logo.png" alt="Organization 3">
+</div>
+
+<div class="org-item">
+<img src="Copy of namasankeerthanam scotland.jpg" alt="Organization 4">
+</div>
+
+<div class="org-item">
+<img src="Copy of Photo from Swetha S(1).jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Copy of Photo from Swetha S.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Copy of siacs.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Copy of WhatsApp Image 2025-01-26 at 8.54.59 PM.jpeg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="ipswich.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Leamington marati.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Solihull hindu temple.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="SVRTUK.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="Swindon mitra mandal.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="swindon temple.jpg" alt="Organization 5">
+</div>
+
+<div class="org-item">
+<img src="ycg.jpg" alt="Organization 5">
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 
 <footer>
-Free Event! <br>
-All are welcome!
+!!Ram Krushna Hari!!
 </footer>
+
 
 </body>
 </html>
-
-
-
-
-
-
-
